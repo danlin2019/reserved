@@ -1,0 +1,54 @@
+@charset 'utf-8';
+
+// base
+@import "base/_normalize.min.scss";
+
+
+// variables mixin
+@import "abstracts/_variable.scss";
+@import "abstracts/_mixin.scss";
+
+// bootstrap
+@import "vendors/bootstrap/_functions.scss";
+@import "vendors/bootstrap/_variables.scss";
+@import "vendors/bootstrap/_mixins.scss";
+@import "vendors/bootstrap/_forms.scss";
+@import "vendors/bootstrap/_reboot.scss";
+
+@import "vendors/bootstrap/_grid.scss";
+@import "vendors/bootstrap/utilities/_flex.scss";
+@import "vendors/bootstrap/utilities/_align.scss";
+@import "vendors/bootstrap/utilities/_borders.scss";
+
+// slick
+@import "vendors/slick/slick.scss";
+@import "vendors/slick/slick-theme.scss";
+
+
+// 全站共用
+@import "layout/_footer.scss";
+@import "layout/_footer.scss";
+@import "layout/_share.scss";
+
+// components
+@import "components/_buttom.scss";
+@import "components/_bg.scss";
+
+// page 分頁
+@import "pages/_index.scss";
+@import "pages/_aobut.scss";
+@import "pages/_media.scss";
+@import "pages/_media-detail.scss";
+@import "pages/_hot-case.scss";
+@import "pages/_hot-case-detail.scss";
+@import "pages/_history-case.scss";
+@import "pages/_history-case-detail.scss";
+@import "pages/_contact.scss";
+
+
+// section 區塊 
+@import "section/index/_featured-case.scss";
+@import "section/index/_hot-case.scss";
+@import "section/index/_brand-case.scss";
+@import "section/index/_history-case.scss";
+@import "section/index/_about.scss";

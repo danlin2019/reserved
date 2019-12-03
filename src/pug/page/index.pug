@@ -1,0 +1,11 @@
+- var d = Date.now()
+doctype html
+html(lang="zh-tw")
+  head
+    include ../components/head.pug
+  body
+    div#wrapper
+      include ../components/header.pug
+      include ../components/footer.pug
+    script(src='../js/vendors.js')
+    script(src='../js/index.js?v=' + d)

@@ -46,7 +46,7 @@ view-source:http://www.oxxostudio.tw/demo/201801/google-maps-3-marker-demo-05.ht
 
     components
       components/footer.pug
-      components/head.pug
+      components/bg.pug
       components/header.pug
 
     page
@@ -96,7 +96,7 @@ view-source:http://www.oxxostudio.tw/demo/201801/google-maps-3-marker-demo-05.ht
 
     components
       components/_buttom.scss
-      components/_content_bg.scss
+      components/_bg.scss
 
     layout
       layout/_share.scss
