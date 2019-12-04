@@ -1,5 +1,15 @@
 // 字型定義
 
+@font-face {
+    font-family: "Goudy-Old"; //選單英文
+    src: url(../assets/Goudy-Old-Style-T-OT_21139.ttf);
+}
+
+@font-face {
+    font-family: "spinwerad"; //標題 選單
+    src: url(../../assets/spinwerad.ttf);
+}
+
 $font_content: Arial, sans-serif, 微軟正黑體;
 $notofont: -apple-system,'微軟正黑體', Arial, Verdana, sans-serif;
 
@@ -7,6 +17,6 @@ $notofont: -apple-system,'微軟正黑體', Arial, Verdana, sans-serif;
 
 $black: #000;
 $white: #ffffff;
-$red: #a62f35;
+$red: #b81a28;
 $red_text: #6c1e22;
 $bg_color:#f4f1ea;

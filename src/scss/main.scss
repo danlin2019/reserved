@@ -27,8 +27,10 @@
 
 // 全站共用
 @import "layout/_footer.scss";
-@import "layout/_footer.scss";
+@import "layout/_header.scss";
+@import "layout/_menu.scss";
 @import "layout/_share.scss";
+@import "layout/_left-nav.scss";
 
 // components
 @import "components/_buttom.scss";

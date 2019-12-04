@@ -1,0 +1,40 @@
+- var d = Date.now()
+doctype html
+html(lang="zh-tw")
+  head
+    include ../components/head.pug
+  body
+    div#wrapper.hot-case-page
+      include ../components/header.pug
+      main(role="main")
+        .main-banner
+          img(src="files/img/case/2000x665.jpg", alt="")
+        //- path
+        .path
+          .path-box
+            a(href="index.html") 首頁 
+            | 熱銷建案
+        //- 左邊選單
+        .main-content
+          .left-nav
+            .nav-title
+              | 熱銷建案
+            .item_nav
+              ul
+                li.active
+                  a(href="#") 所有年度 
+                li
+                  a(href="#") 2019 
+                li
+                  a(href="#") 2018 
+                li
+                  a(href="#") 2017 
+                li
+                  a(href="#") 2016 
+          .right-content
+            .title-box
+              h2 熱銷建案
+              h3 HOT CASE
+      include ../components/footer.pug
+    script(src='files/js/vendors.js')
+    script(src='files/js/index.js?v=' + d)

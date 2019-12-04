@@ -66,9 +66,9 @@ $sm: 576px;
 }
 
 
-@function pxToEm($px, $base: 100) { 
-  @return ($px / $base) * 1vw; 
-}
+// @function pxToEm($px, $base: 100) { 
+//   @return ($px / $base) * 1vw; 
+// }
 
 //------------------------- 限定行數  行高 行數(行高x行數)x1rem ---------//
 
