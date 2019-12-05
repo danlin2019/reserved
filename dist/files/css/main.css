@@ -2864,12 +2864,18 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .header-box .logo {
+    position: relative;
     width: 28.027%;
     height: 0;
     padding-bottom: 5.58%;
     background: url(../img/header/logo.png) top left no-repeat;
     background-size: cover;
     text-indent: -10000px; }
+    .header-box .logo a {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%; }
 
 .nav-box {
   width: 100%;
@@ -3253,15 +3259,21 @@ main[role=main] {
       text-align: left;
       color: #3b3838; }
 
-.hot-case-page .item_nav:after {
+.hot-case-list-page .item_nav:after, .hot-case-detail-page .item_nav:after,
+.history-case-list-page .item_nav:after, .history-case-detail-page .item_nav:after {
   content: '';
   position: absolute;
-  color: #f7f7f7;
   width: 108px;
-  height: 1080px;
-  background: url(../img/case/case_icon.png);
   z-index: -1;
   margin: -86% 0 0 44%; }
+
+.hot-case-list-page .item_nav:after, .hot-case-detail-page .item_nav:after {
+  height: 1080px;
+  background: url(../img/case/case_icon.png); }
+
+.history-case-list-page .item_nav:after, .history-case-detail-page .item_nav:after {
+  height: 1080px;
+  background: url(../img/history/history_icon.png); }
 
 /*----------------------頁數------------------------*/
 .page dt.ltbn a:before, .page dt.rtbn a:before {
@@ -3330,7 +3342,7 @@ main[role=main] {
     width: 28px;
     height: 28px; } }
 
-.hot-case-list-page .right-content {
+.hot-case-list-page .right-content, .history-case-list-page .right-content {
   width: 82.6%; }
 
 .case-list a {
@@ -3411,10 +3423,10 @@ main[role=main] {
     background-size: cover; }
 
 @media screen and (max-width: 1366px) {
-  .right-content {
+  .hot-case-list-page, .history-case-list-page {
     width: 76%; } }
 
-.hot-case-detail-page .right-content {
+.hot-case-detail-page .right-content, .history-case-detail-page .right-content {
   width: 78.462%; }
 
 .hot-case-detail-content {
@@ -3425,6 +3437,10 @@ main[role=main] {
     padding-bottom: 19px;
     margin-bottom: 30px;
     border-bottom: 1px solid #353535; }
+
+@media screen and (max-width: 1366px) {
+  .hot-case-detail-page .right-content, .history-case-detail-page .right-content {
+    width: 76%; } }
 
 .hot-case-photo {
   width: 100%; }

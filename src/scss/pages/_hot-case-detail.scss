@@ -1,4 +1,4 @@
-.hot-case-detail-page{
+.hot-case-detail-page,.history-case-detail-page{
   .right-content{
       width: 78.462%;
   } 
@@ -13,5 +13,14 @@
     padding-bottom: 19px;
     margin-bottom: 30px;
     border-bottom:1px solid #353535 ;
+  }
+}
+
+
+@include screen(1366px) {
+  .hot-case-detail-page,.history-case-detail-page{
+    .right-content{
+        width: 76%;
+    } 
   }
 }

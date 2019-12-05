@@ -19,11 +19,18 @@ header{
     display: flex;
     justify-content: space-between;
     .logo{
+        position: relative;
         width: 28.027%;
         height: 0;
         padding-bottom: 5.58%;
         background: url(../img/header/logo.png) top left no-repeat;
         background-size: cover;
         text-indent: -10000px;
+        a{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
     }
 }

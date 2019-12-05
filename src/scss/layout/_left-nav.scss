@@ -43,16 +43,28 @@
         }
     }
 }
+.hot-case-list-page,.hot-case-detail-page,
+.history-case-list-page,.history-case-detail-page{
+    .item_nav:after{
+        content: '';
+        position: absolute;
+        width: 108px;    
+        z-index: -1;
+        margin: -86% 0 0 44%;    
+    }
 
-.hot-case-page{
+}
+.hot-case-list-page,.hot-case-detail-page{
   .item_nav:after{
-    content: '';
-    position: absolute;
-    color: #f7f7f7;
-    width: 108px;
     height: 1080px;
     background: url(../img/case/case_icon.png);
-    z-index: -1;
-    margin: -86% 0 0 44%;
   }
 }
+
+.history-case-list-page,.history-case-detail-page{
+    .item_nav:after{
+      height: 1080px;
+      background: url(../img/history/history_icon.png);
+    }
+  }
+  
