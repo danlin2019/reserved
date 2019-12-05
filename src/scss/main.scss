@@ -35,6 +35,7 @@
 // components
 @import "components/_buttom.scss";
 @import "components/_bg.scss";
+@import "components/_page-list.scss";
 
 // page 分頁
 @import "pages/_index.scss";
@@ -49,6 +50,7 @@
 
 
 // section 區塊 
+@import "section/case/_case-slick";
 @import "section/index/_featured-case.scss";
 @import "section/index/_hot-case.scss";
 @import "section/index/_brand-case.scss";

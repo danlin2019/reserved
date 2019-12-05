@@ -37,7 +37,9 @@ html,body,h1,h2,h3,h4,h5,h6,p,b,div,span,iframe,ul,ol,li,img{
   font-size: 100%;
   font: inherit;
 }
-
+html img {
+  max-width: 100%;
+};
 
 ::-webkit-input-placeholder{
   color: #aaa7a7;
@@ -65,12 +67,12 @@ body {
   line-height: 1em;
   overflow: auto;
   font-size: 1rem;
-  color: #000;
+  color: #3b3838;
   word-break: break-word;
   letter-spacing: .1em;
   font-family: 微軟正黑體,Arial,sans-serif;
   z-index: 0;
-  background: url(../img/guide/05.jpg) center top no-repeat;
+  // background: url(../img/guide/05.jpg) center top no-repeat;
 }
 
 // #wrapper 
@@ -104,26 +106,29 @@ main[role=main]{
 }
 
 .path-box{
-  width: 82%;
+  width: 92%;
+  max-width: 1560px;
   margin: auto;
 
 }
 .main-content{
   padding-top: 3px;
-  width: 82%;
+  width: 92%;
+  max-width: 1560px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
 .right-content{
-  width: 82.6%;
   margin-left: 0%;
+  margin-bottom: 52px;
 }
 
 .title-box{
   text-align: center;
   font-weight: bold;
+  margin-bottom: 2.3%;
   h2{
     font-family: 'Noto Serif TC', serif;
     color: #373737;
@@ -135,7 +140,50 @@ main[role=main]{
     color: #a8a8a8;
     font-family: "spinwerad";
     font-size: pxToEm(30);
-    line-height: 2.8;
+    line-height: 2;
     letter-spacing: 3px;
+  }
+  &::after{
+    display: block;
+    content: '';
+    background: url(../img/title_shadow.png) no-repeat;
+    background-size: cover;
+    width: 422px;
+    height: 35px;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.main-banner{
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}
+
+// HTML 編輯器
+.editor-box{
+  width: 100%;
+  margin: 0 auto 6% auto;
+  ul,ol {
+    padding-left: 20px;
+}
+  img {
+      max-width: 100%;
+      height: auto !important;
+  }
+  iframe {
+      max-width: 100%;
+      @media screen and (max-width: 767px) {
+          height: auto !important;
+      }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      margin: inherit;
   }
 }

@@ -1,6 +1,5 @@
 .left-nav{
-    max-width: 133px;
-    width: 10%;
+    width: 17%;
 }
 .nav-title{
     font-size: pxToEm(30);
@@ -11,9 +10,12 @@
     padding-bottom: 8px;
     border-bottom: 2px solid #353535;
     margin-bottom: 10px;
+    max-width: 133px;
+
 }
 
 .item_nav{
+    max-width: 133px;
     position: relative;
     li{
         position: relative;

@@ -1,0 +1,94 @@
+/*----------------------頁數------------------------*/
+$lr_btn:14px;
+%list_a{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.page {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    dd{
+        margin-bottom: 0;
+    }
+    dt,
+    dd {
+        vertical-align: middle;
+        display: inline-block;
+        a {
+            font-size: pxToEm(20);
+            display: block;
+            height: 32px;
+            line-height: 30px;
+            text-decoration: none;
+            color: #8f8f8f;
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    dd{
+        width: 2%;
+    }
+    dd.active a {
+        @include border();
+        background: none;
+        padding: 0;
+        color: $red;
+        font-weight: bold;
+    }
+    dt.rtbn a,
+    dt.ltbn a {
+        width: 20px;
+        height: 30px;
+        transition: 0.4s;
+        position: relative;
+        top: -1px;
+    }
+    .nopage {
+        display: none;
+    }
+   
+    dt.ltbn a{
+        // margin-right:  $lr_btn;
+        &:before{
+            @extend %list_a;
+            content: '<';
+        }
+      
+    }
+    dt.rtbn a{
+        // margin-left:  $lr_btn;
+        &:before{
+            @extend %list_a;
+            content: '>';
+        }
+     
+    }
+}
+@include media-breakpoint-down(xs) {
+    .page{
+        dd {
+            width: 11%;
+        }
+        dt.ltbn a{
+            &:before{
+                border-width: 5px 5px 5px 0;
+            }
+        }
+        dt.rtbn a{
+            &:before{
+                border-width: 5px 0 5px 5px;
+            }
+        }
+        dt.ltbn a, dt.rtbn a{
+            width: 28px;
+            height: 28px;
+        }
+    }
+}

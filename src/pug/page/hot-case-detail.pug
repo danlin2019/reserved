@@ -1,0 +1,61 @@
+doctype html
+html(lang="zh-tw")
+  head
+    include ../components/head.pug
+  body
+    div#wrapper.hot-case-detail-page
+      include ../components/header.pug
+      main(role="main")
+        .main-banner
+          img(src="files/img/case/2000x670.jpg", alt="")
+        //- path
+        .path
+          .path-box
+            a(href="index.html") 首頁 
+            | 熱銷建案
+        //- 左邊選單
+        .main-content
+          .left-nav
+            .nav-title
+              | 熱銷建案
+            .item_nav
+              ul
+                li.active
+                  a(href="#") 所有年度 
+                li
+                  a(href="#") 2019 
+                li
+                  a(href="#") 2018 
+                li
+                  a(href="#") 2017 
+                li
+                  a(href="#") 2016 
+          //- 右邊區塊
+          .right-content
+            .title-box
+              h2 熱銷建案
+              h3 HOT CASE
+            //- 功能
+            include ../section/hot_case/case-slick.pug
+            //- 底下內容
+            .hot-case-detail-content
+              h2 建案規畫
+              .editor-box
+                img(src="files/img/case/detail.jpg")
+
+                    
+      //- footer
+      include ../components/footer.pug
+    script(src='files/js/vendors.js')
+    script(src='files/js/source/jquery.fancybox.pack.js?v=2.1.5')
+    link(rel="stylesheet", href="files/js/source/jquery.fancybox.css?v=2.1.5" media="screen")
+
+    link(rel="stylesheet", href="files/js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5")
+    script(src='files/js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5')
+
+    link(rel="stylesheet", href="files/js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7")
+    script(src='files/js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7')
+
+    script(src='files/js/source/helpers/jquery.fancybox-media.js?v=1.0.6')
+    script(src='files/js/index.js?v=' + d)
+

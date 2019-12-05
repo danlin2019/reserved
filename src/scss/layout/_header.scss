@@ -8,17 +8,20 @@ header{
     height: 118px;
     display: flex;
     align-items: center;
+    z-index: 10;
 }
 
 .header-box{
     position: relative;
-    width: 81%;
+    width: 92%;
+    max-width: 1541px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     .logo{
-        width: 432px;
-        height: 86px;
+        width: 28.027%;
+        height: 0;
+        padding-bottom: 5.58%;
         background: url(../img/header/logo.png) top left no-repeat;
         background-size: cover;
         text-indent: -10000px;

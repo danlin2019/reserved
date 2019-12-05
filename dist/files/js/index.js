@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(".fancybox-effects-a").fancybox({prevEffect:"fade",nextEffect:"fade",helpers:{title:{type:"outside"},overlay:{speedOut:0}}}),$(".slider-for").slick({slidesToShow:1,slidesToScroll:1,arrows:!0,focusOnSelect:!0,fade:!0,asNavFor:".slider-nav"}),$(".slider-nav").slick({slidesToShow:4,slidesToScroll:1,asNavFor:".slider-for",dots:!1,focusOnSelect:!0,variableWidth:!0,infinite:!0,responsive:[{breakpoint:800,settings:{slidesToShow:3,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:3,slidesToScroll:1}}]}),$(".case-list-img").imgLiquid();
