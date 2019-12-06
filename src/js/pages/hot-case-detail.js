@@ -1,4 +1,5 @@
-if($('#wrapper').hasClass('.hot-case-detail-page') || $('#wrapper').hasClass('.history-case-detail-page')){
+
+if($('.hot-case-detail-page') || $('.history-case-detail-page')){
     $(".fancybox-effects-a").fancybox({
         prevEffect  : 'fade',
         nextEffect  : 'fade',

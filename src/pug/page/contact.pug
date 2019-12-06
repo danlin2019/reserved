@@ -40,9 +40,13 @@ html(lang="zh-tw")
                 li.add-icon
                   a(href="https://goo.gl/maps/irT4mwvzuAhzesEc7" target='_blank') 338桃園市蘆竹區經國路896號6樓
           
-          
+      <div id="map"></div>       
          
       //- footer
       include ../components/footer.pug
     script(src='files/js/vendors.js')
+    //- AIzaSyDnu57ZjWWXhSzmceiSXPttGrCq45CKHYU
+    //- AIzaSyDnu57ZjWWXhSzmceiSXPttGrCq45CKHYU
+    //- AIzaSyDG32nqAMbYOXTHP6EAbkRHGF3mJd2PyMo
+    script(async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDnu57ZjWWXhSzmceiSXPttGrCq45CKHYU&callback=initMap')
     script(src='files/js/index.js?v=' + d)

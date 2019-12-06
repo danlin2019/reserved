@@ -3591,16 +3591,29 @@ main[role=main] {
     width: 76%; } }
 
 .contact-page .main-content {
+  position: relative;
   width: 92%;
   max-width: 1560px;
-  margin: 0 auto 46px auto;
+  margin: 0 auto 53px auto;
   padding: 74px 0 53px 0;
   background: url(../img/contact/contact_bg.png) no-repeat;
   background-size: cover;
   display: block; }
+  .contact-page .main-content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 53.783%;
+    height: 0;
+    padding-bottom: 6.924%;
+    display: block;
+    background: url(../img/contact/conact_icon.png) no-repeat;
+    background-size: cover; }
 
 .contact-box {
-  width: 82%;
+  width: 88%;
   max-width: 1264px;
   margin: auto;
   display: -webkit-box;
@@ -3616,7 +3629,7 @@ main[role=main] {
     margin-bottom: 47px; }
 
 .form-box, .con-box {
-  width: 50%;
+  width: 45%;
   max-width: 538px;
   font-size: 1.375rem; }
 
@@ -3702,6 +3715,10 @@ main[role=main] {
   margin-right: 22px;
   background: url(../img/contact/address_icon.png) no-repeat;
   background-size: cover; }
+
+#map {
+  width: 100%;
+  height: 361px; }
 
 .hot-case-photo {
   width: 100%; }
@@ -3801,14 +3818,14 @@ main[role=main] {
   height: 53px !important;
   background: url(../img/case/next.png) 0 0 no-repeat !important;
   background-size: contain !important;
-  right: -70px !important; }
+  right: -0px !important; }
 
 .fancybox-prev span {
   width: 53px !important;
   height: 53px !important;
   background: url(../img/case/prev.png) 0 0 no-repeat !important;
   background-size: contain !important;
-  left: -70px !important; }
+  left: -0px !important; }
 
 .fancybox-close {
   top: 6px !important;
@@ -3829,8 +3846,6 @@ main[role=main] {
   visibility: visible !important; }
 
 @media screen and (max-width: 768px) {
-  .locationpage .title {
-    padding-left: 0px; }
   .hot-case-photo {
     float: none;
     width: 100%;
@@ -3840,46 +3855,9 @@ main[role=main] {
     width: 100%;
     margin-top: 40px; }
     .hot-case-product-text li {
-      width: 100% !important; }
-  .lb-outerContainer {
-    width: 80% !important;
-    height: auto !important;
-    margin: 0 auto; } }
-  @media screen and (max-width: 768px) and (max-width: 480px) {
-    .lb-outerContainer {
-      width: 70% !important; } }
-
-@media screen and (max-width: 768px) {
-    .lb-outerContainer img {
-      width: 100% !important;
-      height: auto !important; }
-  .lb-nav a.lb-prev {
-    left: -77px !important;
-    position: relative; } }
-  @media screen and (max-width: 768px) and (max-width: 480px) {
-    .lb-nav a.lb-prev {
-      left: -46px !important;
-      background-size: 40% !important; } }
-
-@media screen and (max-width: 768px) {
-  .lb-nav a.lb-next {
-    position: relative;
-    right: -66px !important; } }
-  @media screen and (max-width: 768px) and (max-width: 480px) {
-    .lb-nav a.lb-next {
-      right: -48px !important;
-      background-size: 22% !important; } }
+      width: 100% !important; } }
 
 @media screen and (max-width: 767px) {
-  .lb-data .lb-close {
-    width: 62px !important;
-    height: 62px !important;
-    background-size: contain !important;
-    left: -4px; }
-  .rightContent li:nth-child(3n) {
-    margin-right: 10px; }
-  .rightContent li:nth-child(2n) {
-    margin-right: 0px; }
   .polist {
     width: 78%; } }
   @media screen and (max-width: 767px) and (max-width: 320px) {
@@ -3901,8 +3879,6 @@ main[role=main] {
     top: -23px !important;
     right: 7px !important;
     width: 50px !important;
-    height: 50px !important; }
-  .locationpage .back {
-    padding-top: 27px; } }
+    height: 50px !important; } }
 
 /*# sourceMappingURL=main.css.map */

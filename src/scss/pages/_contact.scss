@@ -1,15 +1,29 @@
 .contact-page .main-content{
+  position: relative;
   width: 92%;
   max-width: 1560px;
-  margin: 0 auto 46px auto;
+  margin: 0 auto 53px auto;
   padding: 74px 0 53px 0;
   background: url(../img/contact/contact_bg.png) no-repeat;
   background-size: cover;
   display: block;
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 53.783%;
+    height: 0;
+    padding-bottom: 6.924%;
+    display: block;
+    background: url(../img/contact/conact_icon.png) no-repeat;
+    background-size: cover;
+  }
 }
 
 .contact-box{
-  width: 82%;
+  width: 88%;
   max-width: 1264px;
   margin: auto;
   display: flex;
@@ -23,7 +37,7 @@
 }
 
 .form-box,.con-box{
-  width: 50%;
+  width: 45%;
   max-width: 538px;
   font-size: pxToEm(22);
 }
@@ -131,4 +145,9 @@
       background-size: cover;
     }
   }
+}
+
+#map{
+  width: 100%;
+  height: 361px;
 }

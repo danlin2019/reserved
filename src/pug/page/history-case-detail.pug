@@ -1,7 +1,11 @@
 doctype html
 html(lang="zh-tw")
   head
+    link(rel="stylesheet", href="files/css/source/jquery.fancybox.css?v=2.1.5" media="screen")
+    link(rel="stylesheet", href="files/css/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7")
+    link(rel="stylesheet", href="files/css/source/helpers/jquery.fancybox-buttons.css?v=1.0.5")
     include ../components/head.pug
+
   body
     div#wrapper.history-case-detail-page
       include ../components/header.pug
@@ -47,15 +51,5 @@ html(lang="zh-tw")
       //- footer
       include ../components/footer.pug
     script(src='files/js/vendors.js')
-    script(src='files/js/source/jquery.fancybox.pack.js?v=2.1.5')
-    link(rel="stylesheet", href="files/js/source/jquery.fancybox.css?v=2.1.5" media="screen")
-
-    link(rel="stylesheet", href="files/js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5")
-    script(src='files/js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5')
-
-    link(rel="stylesheet", href="files/js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7")
-    script(src='files/js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7')
-
-    script(src='files/js/source/helpers/jquery.fancybox-media.js?v=1.0.6')
     script(src='files/js/index.js?v=' + d)
 
