@@ -1,0 +1,48 @@
+doctype html
+html(lang="zh-tw")
+  head
+    include ../components/head.pug
+  body
+    div#wrapper.contact-page
+      include ../components/header.pug
+      main(role="main")
+        .main-banner
+          img(src="files/img/contact/2000x670.jpg")
+        //- path
+        .path
+          .path-box
+            a(href="index.html") 首頁 
+            | 聯絡我們
+        .main-content
+          .contact-box
+            .form-box
+              h2 留下您的意見
+              form(action="")
+                h3 您的姓名（需填寫）
+                input(type="text")
+                h3 您的電子郵件信箱（需填寫）
+                input(type="email")
+                h3 您的連絡電話（可不填）
+                input(type="tel")
+                h3 主旨
+                input(type="text")
+                h3 您的信件內容
+                textarea
+              button.btn-send 傳送
+            .con-box
+              h2 聯繫我們
+              p 我們相當重視客戶的需求，如有任何問題想詢問我們，歡迎隨時與我們聯繫。
+              ul
+                li.tel-icon
+                  a(href="tel:03-3566-101") 03-3566-101
+                li.mail-icon
+                  a(href="mailto:service@50c.com.tw" target='_blank') service@50c.com.tw
+                li.add-icon
+                  a(href="https://goo.gl/maps/irT4mwvzuAhzesEc7" target='_blank') 338桃園市蘆竹區經國路896號6樓
+          
+          
+         
+      //- footer
+      include ../components/footer.pug
+    script(src='files/js/vendors.js')
+    script(src='files/js/index.js?v=' + d)

@@ -1,0 +1,55 @@
+doctype html
+html(lang="zh-tw")
+  head
+    include ../components/head.pug
+  body
+    div#wrapper.media-page
+      include ../components/header.pug
+      main(role="main")
+        .main-banner
+          img(src="files/img/case/2000x670.jpg", alt="")
+        //- path
+        .path
+          .path-box
+            a(href="index.html") 首頁 
+            a(href="media.html") 媒體報導 
+            a(href="media.html") 所有報導 
+            | 都市更新事業計畫及權利變換計畫案
+        //- 左邊選單
+        .main-content
+          .left-nav
+            .nav-title
+              | 媒體報導
+            .item_nav
+              ul
+                li.active
+                  a(href="#") 所有報導 
+                li
+                  a(href="#") 建案活動 
+                li
+                  a(href="#") 房界新聞 
+          //- 右邊區塊
+          .right-content
+            .title-box
+              h2 媒體報導
+              h3 MEDIA
+            .media-content
+              .media-title
+                h2 都市更新事業計畫及權利變換計畫案
+                .media-time-tag
+                  .media-time 2019-08-05
+                  .media-tag 房界新聞
+              .editor-box
+                |桃園從升格以來房市就備受矚目，除了原先航空城話題受惠的青埔，因為先前市場過程，加上政府打房政策影響，讓區域市場出現盤整期，然而在桃園其他區域仍維持平穩，尤其是以自住客為主楊梅房市，平均1字頭房價仍是桃園CP值最高的區域，吸引購屋族目光。
+                br
+                |位於楊梅埔心的「百川文心硯」，是桃園知名建商百川建設首度跨入楊梅的第一個個案，百川建設向來重視地段價值和環境品質，因此特別挑選這塊土地，業績包含位於藝文特區的雲頂與一品國硯、百川晶硯等知名個案。
+                br
+                br
+                |桃園從升格以來房市就備受矚目，除了原先航空城話題受惠的青埔，因為先前市場過程，加上政府打房政策影響，讓區域市場出現盤整期，然而在桃園其他區域仍維持平穩，尤其是以自住客為主楊梅房市，平均1字頭房價仍是桃園CP值最高的區域，吸引購屋族目光。
+                br
+                |位於楊梅埔心的「百川文心硯」，是桃園知名建商百川建設首度跨入楊梅的第一個個案，百川建設向來重視地段價值和環境品質，因此特別挑選這塊土地，業績包含位於藝文特區的雲頂與一品國硯、百川晶硯等知名個案。
+         
+      //- footer
+      include ../components/footer.pug
+    script(src='files/js/vendors.js')
+    script(src='files/js/index.js?v=' + d)

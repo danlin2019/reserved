@@ -101,6 +101,15 @@ main[role=main]{
     text-decoration: none;
     &:hover{
       color: $red;
+      &::after{
+        color: #8f8f8f;
+      }
+    }
+    &::after{
+      content: '＞';
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 4px;
     }
   }
 }
@@ -163,8 +172,13 @@ main[role=main]{
 
 // HTML 編輯器
 .editor-box{
+  font-size: pxToEm(20);
   width: 100%;
-  margin: 0 auto 6% auto;
+  margin: 0 auto;
+  line-height: 1.7;
+  @include screen(640px) {
+    font-size: pxToEm(16);
+  }
   ul,ol {
     padding-left: 20px;
 }

@@ -1,16 +1,20 @@
-$(".fancybox-effects-a").fancybox({
-    prevEffect  : 'fade',
-    nextEffect  : 'fade',
-    helpers: {
-        title : {
-            type : 'outside'
-        },
-        overlay : {
-            speedOut : 0
+if($('#wrapper').hasClass('.hot-case-detail-page') || $('#wrapper').hasClass('.history-case-detail-page')){
+    $(".fancybox-effects-a").fancybox({
+        prevEffect  : 'fade',
+        nextEffect  : 'fade',
+        helpers: {
+            title : {
+                type : 'outside'
+            },
+            overlay : {
+                speedOut : 0
+            }
         }
-    }
 
-});
+    });    
+}
+
+
 
 $('.slider-for').slick({
     slidesToShow: 1,

@@ -1,0 +1,134 @@
+.contact-page .main-content{
+  width: 92%;
+  max-width: 1560px;
+  margin: 0 auto 46px auto;
+  padding: 74px 0 53px 0;
+  background: url(../img/contact/contact_bg.png) no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.contact-box{
+  width: 82%;
+  max-width: 1264px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  h2{
+    font-size: pxToEm(40);
+    border-bottom: 1px solid #acacac;
+    padding-bottom: 45px;
+    margin-bottom: 47px;
+  }
+}
+
+.form-box,.con-box{
+  width: 50%;
+  max-width: 538px;
+  font-size: pxToEm(22);
+}
+.form-box{
+  h3{
+    
+    margin-bottom: 13px;
+  }
+  input,textarea{
+    transition: .2s;
+    width: 100%;
+    background: $white;
+    margin-bottom: 37px;
+    border: none;
+    padding-left: 10px;
+    // border: 1px solid $white;
+
+    &:focus{
+      // border: 1px solid $red;
+    }
+  }
+  input{
+    
+    height: 48px;
+  }
+  textarea{
+    padding-top: 10px;
+    height: 224px;
+  }
+  .btn-send{
+    width: 113px;
+    height: 40px;
+    line-height: 38px;
+    background: #ecebee;
+    border: 1px solid #acacac;
+    font-size: pxToEm(20);
+    letter-spacing: 4px;
+    outline: 0;
+    transition: .4s;
+    cursor: pointer;
+    &:hover{
+      background: $red;
+      color: $white;
+      border-color: $red;
+
+    }
+  }
+  
+}
+
+.con-box{
+  p{
+    line-height: 1.6;
+    padding-right: 7%;
+    margin-bottom: 6%;
+
+  }
+  li{
+    font-size: pxToEm(20);
+    list-style: none;
+    margin-bottom: 6%;
+    a{
+      color: #13bab8;
+      text-decoration: none;
+      &:hover{
+        opacity: .8;
+      }
+    }
+  }
+  .tel-icon{
+    &::before{
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      width: 38px;
+      height: 39px;
+      margin-right: 22px;
+
+      background: url(../img/contact/phone_icon.png) no-repeat;
+      background-size: cover;
+    }
+  }
+  .mail-icon{
+    &::before{
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      width: 36px;
+      height: 35px;
+      margin-right: 22px;
+      background: url(../img/contact/email_icon.png) no-repeat;
+      background-size: cover;
+    }
+  }
+  .add-icon{
+    &::before{
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      width: 36px;
+      height: 37px;
+      margin-right: 22px;
+
+      background: url(../img/contact/address_icon.png) no-repeat;
+      background-size: cover;
+    }
+  }
+}

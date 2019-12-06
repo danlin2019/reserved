@@ -1,70 +1,87 @@
-.left-nav{
-    width: 17%;
+.left-nav {
+  width: 17%;
 }
-.nav-title{
-    font-size: pxToEm(30);
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    text-align: left;
-    color: #3b3838; 
-    padding-bottom: 8px;
-    border-bottom: 2px solid #353535;
-    margin-bottom: 10px;
-    max-width: 133px;
+
+.nav-title {
+  font-size: pxToEm(30);
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #3b3838;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #353535;
+  margin-bottom: 10px;
+  max-width: 133px;
 
 }
 
-.item_nav{
-    max-width: 133px;
+.item_nav {
+  max-width: 133px;
+  position: relative;
+
+  li {
     position: relative;
-    li{
-        position: relative;
-        list-style: none;
-        padding-left: 27px;
-       
-        &.active{
-            a{
-                color: $red;
-            }
-            &:before{
-              position: absolute;
-              top: 49%;
-              left: -3px;
-              transform: translateY(-50%);
-              @include triangle_specially(right_r,6.5px,11px,$red);
-            }
-        }
-        a{
-            font-size: pxToEm(22);
-            line-height: 1.82;
-            letter-spacing: 4.4px;
-            text-align: left;
-            color: #3b3838;
-        }
-    }
-}
-.hot-case-list-page,.hot-case-detail-page,
-.history-case-list-page,.history-case-detail-page{
-    .item_nav:after{
-        content: '';
+    list-style: none;
+    padding-left: 27px;
+
+    &.active {
+      a {
+        color: $red;
+      }
+
+      &:before {
         position: absolute;
-        width: 108px;    
-        z-index: -1;
-        margin: -86% 0 0 44%;    
+        top: 49%;
+        left: -3px;
+        transform: translateY(-50%);
+        @include triangle_specially(right_r, 6.5px, 11px, $red);
+      }
     }
 
+    a {
+      font-size: pxToEm(22);
+      line-height: 1.82;
+      letter-spacing: 4.4px;
+      text-align: left;
+      color: #3b3838;
+    }
+  }
 }
-.hot-case-list-page,.hot-case-detail-page{
-  .item_nav:after{
+
+.hot-case-list-page,
+.hot-case-detail-page,
+.history-case-list-page,
+.history-case-detail-page,
+.media-page{
+  .item_nav:after {
+    content: '';
+    position: absolute;
+    width: 108px;
+    z-index: -1;
+    margin: -86% 0 0 44%;
+  }
+
+}
+
+.hot-case-list-page,
+.hot-case-detail-page {
+  .item_nav:after {
     height: 1080px;
     background: url(../img/case/case_icon.png);
   }
 }
 
-.history-case-list-page,.history-case-detail-page{
-    .item_nav:after{
-      height: 1080px;
-      background: url(../img/history/history_icon.png);
-    }
+.history-case-list-page,
+.history-case-detail-page {
+  .item_nav:after {
+    height: 1080px;
+    background: url(../img/history/history_icon.png);
   }
-  
+}
+
+.media-page{
+  .item_nav:after {
+    height: 1011px;
+    background: url(../img/media/media_icon.png);
+  }
+}
