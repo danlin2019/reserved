@@ -1,0 +1,27 @@
+doctype html
+html(lang="zh-tw")
+  head
+    include ../components/head.pug
+
+
+  body#qas
+    #wrapper.about-page
+      include ../components/header.pug
+      main(role="main")
+        .main-banner
+          img(src="files/img/case/2000x670.jpg", alt="")
+        //- path
+        .path
+          .path-box
+            a(href="index.html") 首頁 
+            | 關於我們
+        //- 左邊選單
+        .main-content
+
+
+                    
+      //- footer
+      include ../components/footer.pug
+    script(src='files/js/vendors.js')
+    script(src='files/js/index.js?v=' + d)
+

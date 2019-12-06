@@ -3,3 +3,7 @@
 // @prepros-prepend ./TweenMax.min.js
 // @prepros-prepend ./slick.js
 // @prepros-prepend ./imgLiquid-min.js
+// @prepros-prepend ./source/jquery.fancybox.pack.js
+// @prepros-prepend ./source/helpers/jquery.fancybox-buttons.js
+// @prepros-prepend ./source/helpers/jquery.fancybox-thumbs.js
+// @prepros-prepend ./source/helpers/jquery.fancybox-media.js
