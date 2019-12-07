@@ -6,10 +6,11 @@
 // @prepros-prepend ./history-case.js
 // @prepros-prepend ./history-case-detail.js
 // @prepros-prepend ./contact.js
-
+// @prepros-prepend ../section/banner.js
 // @prepros-prepend ../section/index/featured-case.js
 // @prepros-prepend ../section/index/hot-case.js
 // @prepros-prepend ../section/index/brand-case.js
 // @prepros-prepend ../section/index/history-case.js
 // @prepros-prepend ../section/index/about.js
+
 

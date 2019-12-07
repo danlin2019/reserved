@@ -52,9 +52,9 @@
     display: none;
 }
 
-$bar-width: 31px;
+$bar-width: 35px;
 $bar-height: 2px;
-$bar-spacing: 10px;
+$bar-spacing: 12px;
 
 .menu-wrapper {
     display: none;
@@ -80,7 +80,7 @@ $bar-spacing: 10px;
 .hamburger-menu {
     position: relative;
     transform: translateY($bar-spacing);
-    background: $green;
+    background: $red;
     transition: all 0ms 300ms;
     @include border(99px);
 
@@ -94,7 +94,7 @@ $bar-spacing: 10px;
     position: absolute;
     left: 0;
     bottom: $bar-spacing;
-    background: $green;
+    background: $red;
     transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
     @include border(99px);
 }
@@ -104,7 +104,7 @@ $bar-spacing: 10px;
     position: absolute;
     left: 0;
     top: $bar-spacing;
-    background: $green;
+    background: $red;
     transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
     @include border(99px);
 }
@@ -174,4 +174,62 @@ $bar-spacing: 10px;
             top: 51%;
         }
     }
+}
+
+
+@include screen(1200px){
+  .nav-box{
+    max-width: 669px;
+  }
+  .nav-box .tw{
+    font-size: pxToEm(20);
+  }
+  .nav-box .en{
+    font-size: pxToEm(18);
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  header{
+    height: 70px;
+  }
+  .menu-wrapper{
+    display: block;
+  }
+  .nav-box{
+    display: none;
+    position: fixed;
+    right: initial;
+    left: 0;
+    top: 70px;
+    background: $red;
+    max-width: 100%;
+    ul{
+      display: block;
+      
+    }
+    li{
+      border-bottom:1px solid #8a101b ;
+      
+    }
+    li:not(:last-child){
+      border-right: none;
+      margin: 0;
+      padding: 0;
+    }
+    a{
+      color: $white;
+      width: 100%;
+      display: block;
+      height: auto;
+      padding: 13px 0;
+    }
+    .tw{
+      font-size: pxToEm(17);
+      margin-bottom: 8px;
+    }
+    .en{
+      font-size: pxToEm(15);
+    }
+  }
 }

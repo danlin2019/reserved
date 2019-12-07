@@ -24,6 +24,7 @@
 .case-list-box{
     width: 100%;
     max-width: 388px;
+    border: solid 1px #cecece;
 }
 .case-list-img{
     position: relative;
@@ -46,8 +47,8 @@
 }
 .case-list-content{
     padding-top: 13.2%;
-    border: solid 1px #cecece;
-    border-top: none ;
+    // border: solid 1px #cecece;
+    // border-top: none ;
 }
 .case-list-text{
     font-size: pxToEm(18);

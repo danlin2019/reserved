@@ -1,3 +1,71 @@
-footer {
+.featured-case{
+  background: #f4f4f4;
+  padding: 45px 0 54px 0;
+  .featured-content{
+    width: 92%;
+    max-width: 1651px;
+    margin: auto;
+    
+  }
+  li{
+    list-style: none;
+    margin: 0 0.48%;
+  }
 
+  .in-icon{
+    max-width: 89px;
+  }
+  .slick-prev{
+    left: 16px;
+    @include screen(1664px) {
+      right: 15px;
+    }
+    @include screen(1440px) {
+      left: 8px;
+    }
+  }
+  .slick-next{
+    right: 46px;
+    @include screen(1664px) {
+      right: 22px;
+    }
+    @include screen(1440px) {
+      right: 8px;
+    }
+    @include screen(1366px) {
+      right: 2px;
+    }
+  }
 }
+
+.in-title{
+  width: 92%;
+  text-align: center;
+  margin: 0 auto 48px auto;
+  .in-icon{
+    margin: auto;
+    display: block;
+    margin-bottom: 14px;
+  }
+  h3{
+    font-size: pxToEm(23);
+    margin-bottom: 22px;
+    color: #838383;
+  }
+  h2{
+    font-size: pxToEm(48);
+    font-family: "spinwerad";
+    line-height: 1;
+    text-transform:uppercase;
+    &:after{
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 51px;
+      height: 2px;
+      background: #838383;
+      margin-top: 23px;
+    }
+  }
+}
+

@@ -34,3 +34,9 @@ header{
         }
     }
 }
+@include media-breakpoint-down(xs) {
+    .header-box .logo {
+        width: 59.027%;
+        padding-bottom: 11.58%;
+    }
+}

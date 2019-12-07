@@ -1,3 +1,53 @@
-footer {
+.in-hot-case{
+  width: 92%;
+  max-width: 1681px;
+  margin: auto;
+  padding: 47px 0 74px 0;
+  .in-icon{
+    max-width: 67px;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+        .case-list-view{
+            color: $red;
+            &::after{
+                background: url(../img/case/arrw_red.svg) top left no-repeat;
+            }
+        }
+    }
+  }
+  .slick-dots{
+    margin: 9px 0 0 0;
+  }
+  .slick-dots li button:before{
+    background: #a4a4a4;
+  }
+  .slick-dots li.slick-active button:before{
+    background: #3b3838;
 
+  }
+  .slick-dots li{
+    width: 18px;
+    height: 18px !important;
+  }
+  .slick-dots li.slick-active{
+    border: 1px solid #3b3838;
+    border-radius: 99em;
+  }
+  .slick-dots li button:before{
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+  }
+}
+  
+@include screen(640px){
+  .in-hot-case li{
+    margin: 0 0.3%;
+  }
 }

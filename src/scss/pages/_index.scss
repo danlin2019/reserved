@@ -1,0 +1,17 @@
+.index-page{
+  .slick-prev, .slick-next{
+    width: 28px;
+    height: 28px;
+    outline: 0;
+  }
+  .slick-prev{
+    background: url(../img/index/btn-arrw.png) 0 0 no-repeat; 
+    background-size: cover;
+  }
+  .slick-next{
+    margin-top: -14px;
+    transform: rotate(-180deg);
+    background: url(../img/index/btn-arrw.png) 0 0 no-repeat; 
+    background-size: cover;
+  }
+}

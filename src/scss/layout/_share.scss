@@ -201,3 +201,12 @@ main[role=main]{
       margin: inherit;
   }
 }
+@include media-breakpoint-down(sm) {
+  .path {
+    font-size: pxToEm(15);
+    margin-bottom: 4.5%;
+    a::after{
+      margin: 0;
+    }
+  }
+}

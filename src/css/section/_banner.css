@@ -1,0 +1,21 @@
+.index-page .main-banner {
+  position: relative;
+  overflow: hidden; }
+  .index-page .main-banner .slick-slider, .index-page .main-banner .slick-track, .index-page .main-banner .slick-list {
+    height: 100vh; }
+  .index-page .main-banner .slick-track li {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+
+.main-banner .slick-dots li button:before {
+  width: 100%;
+  height: 15px;
+  border-radius: 0; }
+
+.main-banner .slick-dots li {
+  width: 10%;
+  height: 15px !important; }
+
+.main-banner .slick-dots li.slick-active button:before {
+  background: #c9c9c9; }

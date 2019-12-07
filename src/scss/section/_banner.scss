@@ -1,0 +1,63 @@
+.index-page .main-banner {
+  position: relative;
+  overflow: hidden;
+
+  .slick-slider,
+  .slick-track,
+  .slick-list {
+    height: 100vh;
+  }
+
+  .slick-track li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main-banner {
+  .slick-dots {
+    margin-top: -53px;
+  }
+
+  .slick-dots li button:before {
+    width: 100%;
+    height: 15px;
+    border-radius: 0;
+  }
+
+  .slick-dots li {
+    width: 10%;
+    height: 15px !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    background: #c9c9c9;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .main-banner .slick-dots {
+    margin-top: -39px;
+  }
+
+  .main-banner .slick-dots li button:before {
+    height: 10px;
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+  .main-banner .slick-dots li {
+    width: 12%;
+    height: 15px !important;
+  }
+
+  .main-banner .slick-dots li button:before {
+    height: 6px;
+  }
+
+  .main-banner .slick-dots {
+    margin-top: -25px;
+  }
+}

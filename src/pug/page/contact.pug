@@ -1,3 +1,4 @@
+- var list = "files/img/contact/2000x670.jpg"
 doctype html
 html(lang="zh-tw")
   head
@@ -6,8 +7,8 @@ html(lang="zh-tw")
     div#wrapper.contact-page
       include ../components/header.pug
       main(role="main")
-        .main-banner
-          img(src="files/img/contact/2000x670.jpg")
+        //- banner
+        include ../section/banner.pug
         //- path
         .path
           .path-box

@@ -1,11 +1,29 @@
-- var d = Date.now()
+- var list = "files/img/index/2000x1110.jpg"
 doctype html
 html(lang="zh-tw")
   head
     include ../components/head.pug
-  body
-    div#wrapper
+  body#qas
+    #wrapper.index-page
       include ../components/header.pug
+      main(role="main")
+        //- banner
+        include ../section/banner.pug
+        //- 精選建案
+        include ../section/index/featured-case.pug
+        //- 熱銷建案
+        include ../section/index/hot-case.pug
+        //- 品牌建案
+        include ../section/index/brand-case.pug
+        //- 歷年建案
+        include ../section/index/history-case.pug
+        //- 關於我們
+        include ../section/index/about.pug
+        //- google map
+        include ../section/index/map.pug 
+      //- footer
       include ../components/footer.pug
     script(src='files/js/vendors.js')
+    script(async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDnu57ZjWWXhSzmceiSXPttGrCq45CKHYU&callback=initMap')
     script(src='files/js/index.js?v=' + d)
+

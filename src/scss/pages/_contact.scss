@@ -1,4 +1,4 @@
-.contact-page .main-content{
+.contact-page .main-content {
   position: relative;
   width: 92%;
   max-width: 1560px;
@@ -7,7 +7,8 @@
   background: url(../img/contact/contact_bg.png) no-repeat;
   background-size: cover;
   display: block;
-  &::after{
+
+  &::after {
     content: '';
     display: block;
     position: absolute;
@@ -22,13 +23,14 @@
   }
 }
 
-.contact-box{
+.contact-box {
   width: 88%;
   max-width: 1264px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  h2{
+
+  h2 {
     font-size: pxToEm(40);
     border-bottom: 1px solid #acacac;
     padding-bottom: 45px;
@@ -36,17 +38,21 @@
   }
 }
 
-.form-box,.con-box{
+.form-box,
+.con-box {
   width: 45%;
   max-width: 538px;
   font-size: pxToEm(22);
 }
-.form-box{
-  h3{
-    
+
+.form-box {
+  h3 {
+
     margin-bottom: 13px;
   }
-  input,textarea{
+
+  input,
+  textarea {
     transition: .2s;
     width: 100%;
     background: $white;
@@ -55,19 +61,22 @@
     padding-left: 10px;
     // border: 1px solid $white;
 
-    &:focus{
+    &:focus {
       // border: 1px solid $red;
     }
   }
-  input{
-    
+
+  input {
+
     height: 48px;
   }
-  textarea{
+
+  textarea {
     padding-top: 10px;
     height: 224px;
   }
-  .btn-send{
+
+  .btn-send {
     width: 113px;
     height: 40px;
     line-height: 38px;
@@ -78,76 +87,164 @@
     outline: 0;
     transition: .4s;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       background: $red;
       color: $white;
       border-color: $red;
 
     }
   }
-  
+
 }
 
-.con-box{
-  p{
+.con-box {
+  p {
     line-height: 1.6;
     padding-right: 7%;
     margin-bottom: 6%;
 
   }
-  li{
+
+  li {
     font-size: pxToEm(20);
     list-style: none;
     margin-bottom: 6%;
-    a{
+
+    a {
       color: #13bab8;
       text-decoration: none;
-      &:hover{
+
+      &:hover {
         opacity: .8;
       }
     }
   }
-  .tel-icon{
-    &::before{
+
+  .tel-icon,
+  .mail-icon,
+  .add-icon {
+    &::before {
       display: inline-block;
       vertical-align: middle;
       content: '';
+      margin-right: 22px;      
+    }
+  }
+
+  .tel-icon {
+    &::before {
       width: 38px;
       height: 39px;
-      margin-right: 22px;
-
       background: url(../img/contact/phone_icon.png) no-repeat;
       background-size: cover;
     }
   }
-  .mail-icon{
-    &::before{
-      display: inline-block;
-      vertical-align: middle;
-      content: '';
+
+  .mail-icon {
+    &::before {
       width: 36px;
       height: 35px;
-      margin-right: 22px;
       background: url(../img/contact/email_icon.png) no-repeat;
       background-size: cover;
     }
   }
-  .add-icon{
-    &::before{
-      display: inline-block;
-      vertical-align: middle;
-      content: '';
+
+  .add-icon {
+    &::before {
       width: 36px;
       height: 37px;
-      margin-right: 22px;
-
       background: url(../img/contact/address_icon.png) no-repeat;
       background-size: cover;
     }
   }
 }
 
-#map{
+#map {
   width: 100%;
   height: 361px;
+}
+
+@include media-breakpoint-down(lg) {
+  .contact-box {
+    display: block;
+  }
+
+  .form-box,
+  .con-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-box {
+    margin-bottom: 10%;
+  }
+
+  .contact-page .main-content::after {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .contact-page .main-content {
+    padding: 29px 0 30px 0;
+    margin-bottom: 5%;
+  }
+
+  .contact-box h2 {
+    font-size: pxToEm(24);
+    padding-bottom: 25px;
+    margin-bottom: 29px;
+  }
+
+  .form-box {
+    margin-bottom: 15%;
+  }
+
+  .form-box h3 {
+    font-size: pxToEm(16);
+  }
+
+  .form-box input {
+    height: 35px;
+    margin-bottom: 28px;
+  }
+
+  .form-box textarea {
+    height: 180px;
+    margin-bottom: 28px;
+  }
+
+  .con-box p {
+    font-size: pxToEm(16);
+  }
+
+  .con-box li {
+    font-size: pxToEm(15);
+
+  }
+  .con-box {
+    .tel-icon,
+    .mail-icon,
+    .add-icon {
+      &::before {
+        margin-right: 10px;      
+      }
+    }
+
+    .tel-icon::before {
+      width: 29px;
+      height: 29px;
+    }
+
+    .mail-icon::before {
+      width: 29px;
+      height: 28px;
+    }
+
+    .add-icon::before {
+      width: 29px;
+      height: 30px;
+    }
+  }
 }
