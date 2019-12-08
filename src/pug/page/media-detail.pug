@@ -1,3 +1,4 @@
+- var list = "files/img/case/2000x670.jpg"
 doctype html
 html(lang="zh-tw")
   head
@@ -6,8 +7,8 @@ html(lang="zh-tw")
     div#wrapper.media-page
       include ../components/header.pug
       main(role="main")
-        .main-banner
-          img(src="files/img/case/2000x670.jpg", alt="")
+        //- banner
+        include ../section/banner.pug
         //- path
         .path
           .path-box
@@ -17,9 +18,13 @@ html(lang="zh-tw")
             | 都市更新事業計畫及權利變換計畫案
         //- 左邊選單
         .main-content
+          .title-box.mo-use
+              h2 熱銷建案
+              h3 HOT CASE
           .left-nav
             .nav-title
               | 媒體報導
+            .item_title 所有報導
             .item_nav
               ul
                 li.active
@@ -30,7 +35,7 @@ html(lang="zh-tw")
                   a(href="#") 房界新聞 
           //- 右邊區塊
           .right-content
-            .title-box
+            .title-box.pc-use
               h2 媒體報導
               h3 MEDIA
             .media-content

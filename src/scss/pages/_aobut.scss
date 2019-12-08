@@ -37,22 +37,19 @@
     position: relative;
     width: 42%;
     max-width: 644px;
-    &:after{
-      display: block;
-      content:'';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 11.332%;
-      height: 0;
-      padding-bottom: 77.24%;
-      background: url(../img/about/about.png);
-      background-size: cover;
-      margin: 10.5% -11% 0 0;
-      z-index: -1;
-    }
   }
 
+
+  span{
+    display: block;
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12.2%;
+    margin: 10.5% -11% 0 0;
+    z-index: -1;
+  }
   .about-text{
     width: 46.381%;
     max-width: 692px;
@@ -101,5 +98,72 @@
     img{
       width: 100%;
     }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .about-content-1,.about-content-2{
+    .content-box{
+      flex-wrap: wrap;
+    }
+    .about-img{
+      width: 100%;
+    }
+    .about-text{
+      width: 100%;
+    }
+  } 
+  .about-content-1{
+    .about-img{
+      order: 2;
+    }
+    .about-text{
+      order: 1;
+    }
+    span{
+      display: block;
+      position: absolute;
+      top: -37%;
+      right: 33%;
+      width: 12.2%;
+      margin: 0;
+      z-index: 0;
+      transform: rotate(-90deg);
+    }
+    .about-text .about-text-editor{
+      margin-bottom: 14%;
+    }
+    &:after{
+      display: none;
+    }
+  }
+  
+
+  .about-content-2{
+    padding-top: 10.1%;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .about-text h2{
+    font-size: pxToEm(24);
+    margin-bottom: 15px;
+  }
+  .about-text .about-text-editor{
+    font-size: pxToEm(16);
+  }
+  .about-content-1 .content-box {
+    padding: 0 3px;
+  }
+  .about-content-1 span{
+    top: -40%;
+    right: 37%;
+  }
+  .about-content-1 .about-text{
+    padding-top: 30px;
+  }
+  .about-content-2 .about-img{
+    width: 69%;
+    margin: 33px auto 0 auto;
   }
 }

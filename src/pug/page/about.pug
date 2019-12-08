@@ -1,19 +1,14 @@
+- var list = "files/img/case/2000x670.jpg"
 doctype html
 html(lang="zh-tw")
   head
     include ../components/head.pug
-
-
   body#qas
     #wrapper.about-page
       include ../components/header.pug
       main(role="main")
-        .main-banner
-          ul
-            li 
-              img(src="files/img/case/2000x670.jpg")
-            li 
-              img(src="files/img/case/2000x670.jpg")
+        //- banner
+        include ../section/banner.pug
         //- path
         .path
           .path-box
@@ -22,6 +17,8 @@ html(lang="zh-tw")
         .about-content-1
           .content-box
             .about-img
+              span 
+                img(src="files/img/about/about.png")
               img(src="files/img/about/aobut-icon.png")
             .about-text
               h2 品質與價值

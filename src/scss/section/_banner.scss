@@ -61,3 +61,9 @@
     margin-top: -25px;
   }
 }
+
+@include screen(768px) {
+  .index-page .main-banner .slick-slider, .index-page .main-banner .slick-track, .index-page .main-banner .slick-list {
+    height: 32vh;
+}
+}

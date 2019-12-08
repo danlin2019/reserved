@@ -177,7 +177,7 @@ $bar-spacing: 12px;
 }
 
 
-@include screen(1200px){
+@include media-breakpoint-down(lg) {
   .nav-box{
     max-width: 669px;
   }
@@ -189,7 +189,7 @@ $bar-spacing: 12px;
   }
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-down(md) {
   header{
     height: 70px;
   }

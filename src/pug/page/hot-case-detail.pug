@@ -1,3 +1,4 @@
+- var list = "files/img/case/2000x670.jpg"
 doctype html
 html(lang="zh-tw")
   head
@@ -11,8 +12,8 @@ html(lang="zh-tw")
     #wrapper.hot-case-detail-page
       include ../components/header.pug
       main(role="main")
-        .main-banner
-          img(src="files/img/case/2000x670.jpg", alt="")
+        //- banner
+        include ../section/banner.pug
         //- path
         .path
           .path-box
@@ -20,6 +21,9 @@ html(lang="zh-tw")
             | 熱銷建案
         //- 左邊選單
         .main-content
+          .title-box.mo-use
+              h2 熱銷建案
+              h3 HOT CASE
           .left-nav
             .nav-title
               | 熱銷建案
@@ -37,7 +41,7 @@ html(lang="zh-tw")
                   a(href="#") 2016 
           //- 右邊區塊
           .right-content
-            .title-box
+            .title-box.pc-use
               h2 熱銷建案
               h3 HOT CASE
             //- 功能
@@ -47,8 +51,6 @@ html(lang="zh-tw")
               h2 建案規畫
               .editor-box
                 img(src="files/img/case/detail.jpg")
-
-                    
       //- footer
       include ../components/footer.pug
     script(src='files/js/vendors.js')

@@ -1,3 +1,4 @@
+- var list = "files/img/case/2000x670.jpg"
 doctype html
 html(lang="zh-tw")
   head
@@ -6,8 +7,8 @@ html(lang="zh-tw")
     div#wrapper.media-page
       include ../components/header.pug
       main(role="main")
-        .main-banner
-          img(src="files/img/case/2000x670.jpg", alt="")
+        //- banner
+        include ../section/banner.pug
         //- path
         .path
           .path-box
@@ -15,9 +16,13 @@ html(lang="zh-tw")
             | 媒體報導
         //- 左邊選單
         .main-content
+          .title-box.mo-use
+              h2 熱銷建案
+              h3 HOT CASE
           .left-nav
             .nav-title
               | 媒體報導
+            .item_title 所有報導  
             .item_nav
               ul
                 li.active
@@ -28,52 +33,60 @@ html(lang="zh-tw")
                   a(href="#") 房界新聞 
           //- 右邊區塊
           .right-content
-            .title-box
+            .title-box.pc-use
               h2 媒體報導
               h3 MEDIA
             .media-list
               ul
                 li
                   a(href="media-detail.html")
-                    .media-tag 房界新聞
                     .media-img
                       img(src="files/img/media/643x377.png")
                     .media-list-content
-                      h2 都市更新事業計畫及權利變換計畫案
+                      .media-title
+                        h2 都市更新事業計畫及權利變換計畫案
+                        .media-tag 房界新聞
                       .media-time 2019-08-05
+                      i.hr-line
                       .media-list-text
                         |暑假不知道去哪放電嗎？「魔法練習生」特展盛大登場！這是全台唯一的「影城式互動特展」，現場除了有10個數位展區能深入體驗，還有12個超受歡迎的童話故事明星，扮演各種拍電影中需要的各種職業角色.......
                       .media-list-view 閱讀全文
                 li
                   a(href="media-detail.html")
-                    .media-tag 房界新聞
                     .media-img
                       img(src="files/img/media/643x377.png")
                     .media-list-content
-                      h2 都市更新事業計畫及權利變換計畫案
+                      .media-title
+                        h2 都市更新事業計畫及權利變換計畫案
+                        .media-tag 房界新聞
                       .media-time 2019-08-05
+                      i.hr-line
                       .media-list-text
                         |暑假不知道去哪放電嗎？「魔法練習生」特展盛大登場！這是全台唯一的「影城式互動特展」，現場除了有10個數位展區能深入體驗，還有12個超受歡迎的童話故事明星，扮演各種拍電影中需要的各種職業角色.......
                       .media-list-view 閱讀全文
                 li
                   a(href="media-detail.html")
-                    .media-tag 房界新聞
                     .media-img
                       img(src="files/img/media/643x377.png")
                     .media-list-content
-                      h2 都市更新事業計畫及權利變換計畫案
+                      .media-title
+                        h2 都市更新事業計畫及權利變換計畫案
+                        .media-tag 房界新聞
                       .media-time 2019-08-05
+                      i.hr-line
                       .media-list-text
                         |暑假不知道去哪放電嗎？「魔法練習生」特展盛大登場！這是全台唯一的「影城式互動特展」，現場除了有10個數位展區能深入體驗，還有12個超受歡迎的童話故事明星，扮演各種拍電影中需要的各種職業角色.......
                       .media-list-view 閱讀全文
                 li
                   a(href="media-detail.html")
-                    .media-tag 房界新聞
                     .media-img
                       img(src="files/img/media/643x377.png")
                     .media-list-content
-                      h2 都市更新事業計畫及權利變換計畫案
+                      .media-title
+                        h2 都市更新事業計畫及權利變換計畫案
+                        .media-tag 房界新聞
                       .media-time 2019-08-05
+                      i.hr-line
                       .media-list-text
                         |暑假不知道去哪放電嗎？「魔法練習生」特展盛大登場！這是全台唯一的「影城式互動特展」，現場除了有10個數位展區能深入體驗，還有12個超受歡迎的童話故事明星，扮演各種拍電影中需要的各種職業角色.......
                       .media-list-view 閱讀全文

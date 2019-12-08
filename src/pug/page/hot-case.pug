@@ -1,4 +1,5 @@
 doctype html
+- var list = "files/img/case/2000x670.jpg"
 html(lang="zh-tw")
   head
     include ../components/head.pug
@@ -6,8 +7,8 @@ html(lang="zh-tw")
     div#wrapper.hot-case-list-page
       include ../components/header.pug
       main(role="main")
-        .main-banner
-          img(src="files/img/case/2000x670.jpg", alt="")
+        //- banner
+        include ../section/banner.pug
         //- path
         .path
           .path-box
@@ -42,6 +43,7 @@ html(lang="zh-tw")
                     .case-list-box
                       .case-list-img
                         img(src="files/img/case/610x610.jpg")
+                      .case-list-title 
                         h3 百川文心硯
                       .case-list-content
                         .case-list-text
@@ -51,27 +53,8 @@ html(lang="zh-tw")
                   a(href="hot-case-detail.html")
                     .case-list-box
                       .case-list-img
-                        img(src="files//img/case/610x610.jpg")
-                        h3 百川文心硯
-                      .case-list-content
-                        .case-list-text
-                          | 正面對桃園巨蛋及桃園農工，全案分為2棟地上15層、地下2層共104戶的集合住宅
-                        .case-list-view VIEW
-                .col-lg-4.col-6
-                  a(href="hot-case-detail.html")
-                    .case-list-box
-                      .case-list-img
-                        img(src="files//img/case/610x610.jpg")
-                        h3 百川文心硯
-                      .case-list-content
-                        .case-list-text
-                          | 正面對桃園巨蛋及桃園農工，全案分為2棟地上15層、地下2層共104戶的集合住宅
-                        .case-list-view VIEW
-                .col-lg-4.col-6
-                  a(href="hot-case-detail.html")
-                    .case-list-box
-                      .case-list-img
-                        img(src="files//img/case/610x610.jpg")
+                        img(src="files/img/case/610x610.jpg")
+                      .case-list-title 
                         h3 百川文心硯
                       .case-list-content
                         .case-list-text
@@ -81,27 +64,8 @@ html(lang="zh-tw")
                   a(href="hot-case-detail.html")
                     .case-list-box
                       .case-list-img
-                        img(src="files//img/case/610x610.jpg")
-                        h3 百川文心硯
-                      .case-list-content
-                        .case-list-text
-                          | 正面對桃園巨蛋及桃園農工，全案分為2棟地上15層、地下2層共104戶的集合住宅
-                        .case-list-view VIEW
-                .col-lg-4.col-6
-                  a(href="hot-case-detail.html")
-                    .case-list-box
-                      .case-list-img
-                        img(src="files//img/case/610x610.jpg")
-                        h3 百川文心硯
-                      .case-list-content
-                        .case-list-text
-                          | 正面對桃園巨蛋及桃園農工，全案分為2棟地上15層、地下2層共104戶的集合住宅
-                        .case-list-view VIEW
-                .col-lg-4.col-6
-                  a(href="hot-case-detail.html")
-                    .case-list-box
-                      .case-list-img
-                        img(src="files//img/case/610x610.jpg")
+                        img(src="files/img/case/610x610.jpg")
+                      .case-list-title 
                         h3 百川文心硯
                       .case-list-content
                         .case-list-text
@@ -111,22 +75,68 @@ html(lang="zh-tw")
                   a(href="hot-case-detail.html")
                     .case-list-box
                       .case-list-img
-                        img(src="files//img/case/610x610.jpg")
+                        img(src="files/img/case/610x610.jpg")
+                      .case-list-title 
                         h3 百川文心硯
                       .case-list-content
                         .case-list-text
                           | 正面對桃園巨蛋及桃園農工，全案分為2棟地上15層、地下2層共104戶的集合住宅
-                        .case-list-view VIEW
+                        .case-list-view VIEW  
                 .col-lg-4.col-6
                   a(href="hot-case-detail.html")
                     .case-list-box
                       .case-list-img
-                        img(src="files//img/case/610x610.jpg")
+                        img(src="files/img/case/610x610.jpg")
+                      .case-list-title 
                         h3 百川文心硯
                       .case-list-content
                         .case-list-text
                           | 正面對桃園巨蛋及桃園農工，全案分為2棟地上15層、地下2層共104戶的集合住宅
-                        .case-list-view VIEW
+                        .case-list-view VIEW 
+                .col-lg-4.col-6
+                  a(href="hot-case-detail.html")
+                    .case-list-box
+                      .case-list-img
+                        img(src="files/img/case/610x610.jpg")
+                      .case-list-title 
+                        h3 百川文心硯
+                      .case-list-content
+                        .case-list-text
+                          | 正面對桃園巨蛋及桃園農工，全案分為2棟地上15層、地下2層共104戶的集合住宅
+                        .case-list-view VIEW 
+                .col-lg-4.col-6
+                  a(href="hot-case-detail.html")
+                    .case-list-box
+                      .case-list-img
+                        img(src="files/img/case/610x610.jpg")
+                      .case-list-title 
+                        h3 百川文心硯
+                      .case-list-content
+                        .case-list-text
+                          | 正面對桃園巨蛋及桃園農工，全案分為2棟地上15層、地下2層共104戶的集合住宅
+                        .case-list-view VIEW  
+                .col-lg-4.col-6
+                  a(href="hot-case-detail.html")
+                    .case-list-box
+                      .case-list-img
+                        img(src="files/img/case/610x610.jpg")
+                      .case-list-title 
+                        h3 百川文心硯
+                      .case-list-content
+                        .case-list-text
+                          | 正面對桃園巨蛋及桃園農工，全案分為2棟地上15層、地下2層共104戶的集合住宅
+                        .case-list-view VIEW 
+                .col-lg-4.col-6
+                  a(href="hot-case-detail.html")
+                    .case-list-box
+                      .case-list-img
+                        img(src="files/img/case/610x610.jpg")
+                      .case-list-title 
+                        h3 百川文心硯
+                      .case-list-content
+                        .case-list-text
+                          | 正面對桃園巨蛋及桃園農工，全案分為2棟地上15層、地下2層共104戶的集合住宅
+                        .case-list-view VIEW 
             //- page list
             include ../components/page-list.pug
       //- footer

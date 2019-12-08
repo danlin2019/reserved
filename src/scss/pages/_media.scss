@@ -21,18 +21,25 @@
           opacity: .7;
         }
       }
-      &:after{
+      .hr-line{
         content: '';
         display: block;
-        position: absolute;
-        
-        width: 100%;
+        position: relative;
+        width: 644px;
         max-width: 644px;
         height: 1px;
         background: $white;
         z-index: 2;
         box-shadow: 4px 6px 7px 7px rgba(0, 0, 0, 0.02);
-        margin: 11.5% 0 0 42%;
+        margin: -10% 0 9% -59%;
+        @include screen(1440px) {
+          width: 540px;
+          margin: -10% 0 9% -40%;
+        }
+        @include screen(1280px) {
+          width: 500px;
+          margin: -10% 0 9% -31%;
+        }
       }
     }
   }
@@ -49,6 +56,12 @@
     h2{
       font-size: pxToEm(20);
       margin-bottom: 23px;
+      width: 100%;
+    }
+    .media-title{
+      border: none;
+      margin: 0;
+      padding: 0;
     }
   }
 }
@@ -88,5 +101,50 @@
     content:'';
     background: url(../img/media/arrw_btn.svg) no-repeat;
     background-size: cover;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .media-list li a{
+    display: block;
+  }
+  .media-list .media-img{
+    width: 100%;
+    max-width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  .media-list .media-list-content{
+    width: 93%;
+    max-width: 100%;
+    margin: 28px auto 31px auto;
+    padding-bottom: 29px;
+  }
+  .media-list .media-list-content h2{
+    font-size: pxToEm(19);
+    width: 66%;
+    order: 1;
+  }
+  .media-list .media-tag{
+    position: relative;
+    margin: 0 0 0 0;
+    order: 2;
+  }
+  .media-time{
+    margin-bottom: 22px;
+  }
+  .media-list-text{
+    margin-bottom: .8%;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .media-list li a .hr-line {
+    width: 300px;
+    margin: 0 0 28px -44px;
+  }
+  .media-list-text{
+    margin-bottom: 8.8%;
   }
 }

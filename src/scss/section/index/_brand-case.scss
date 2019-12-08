@@ -1,69 +1,79 @@
-.brand-case{
+.brand-case {
   background: url(../img/index/brand-bg.jpg) no-repeat;
   background-size: cover;
   padding: 27px 0 84px 0;
 }
 
-.brand-list-box{
+.brand-list-box {
   width: 92%;
   max-width: 1561px;
   margin: auto;
 }
-.brand-list{
+
+.brand-list {
   position: relative;
   width: 100%;
   display: flex;
   background: $white;
-  &:nth-child(1){
-    .brand-list-text{
+
+  &:nth-child(1) {
+    .brand-list-text {
       background: url(../img/index/brand-bg-1.png) right bottom;
       background-size: cover;
     }
   }
-  &:nth-child(2){
-    .brand-list-img{
+
+  &:nth-child(2) {
+    .brand-list-img {
       order: 2;
     }
-    .brand-list-text{
+
+    .brand-list-text {
       background: url(../img/index/brand-bg-1.png) right bottom;
       background-size: cover;
     }
   }
-  &:nth-child(3){
-    .brand-list-text{
+
+  &:nth-child(3) {
+    .brand-list-text {
       background: url(../img/index/brand-bg-1.png) right bottom;
       background-size: cover;
     }
   }
 }
-.brand-list-img{
-  width:  50;
+
+.brand-list-img {
+  width: 50%;
   max-width: 835px;
 }
 
-.brand-list-text{
+.brand-list-text {
   width: 47%;
-  max-width: 723px;  
+  max-width: 723px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  a{
+
+  a {
     text-decoration: none;
     color: #3b3838;
-    &:hover{
-      .btn-brand{
+
+    &:hover {
+      .btn-brand {
         border: 1px solid $red;
         color: $red;
       }
     }
-    
+
   }
-  h2{
+
+  h2 {
     font-size: pxToEm(35);
     margin-bottom: 46px;
-    &:after{
-      content:'';
+
+    &:after {
+      content: '';
       width: 51px;
       height: 2px;
       background: $red;
@@ -71,21 +81,35 @@
       margin: 35px auto 0 auto;
     }
   }
-  h3{
+
+  h3 {
     font-weight: bold;
     font-size: pxToEm(25);
     margin-bottom: 31px;
+
+    @include screen(1366px) {
+      font-size: pxToEm(22);
+      margin-bottom: 25px;
+
+    }
   }
-  .brand-list-content{
-    max-width: 545px;
+
+  .brand-list-content {
     width: 100%;
+    padding: 0 15px;
   }
-  .brand-contenter{
-    font-size: pxToEm(21);
-    margin-bottom: 82px;
+
+  .brand-contenter {
+    font-size: 1.35vw;
+    margin-bottom: 15.1%;
     line-height: 1.6;
+
+    @include screen(1366px) {
+      margin-bottom: 5.1%;
+    }
   }
-  .btn-brand{
+
+  .btn-brand {
     transition: .4s;
     width: 148px;
     height: 39px;
@@ -95,7 +119,55 @@
     margin: auto;
     box-shadow: 1px 1px 5px 0px rgba(143, 143, 143, 0.23);
     background: #fff;
-    
+
+    @include screen(1366px) {
+      font-size: pxToEm(18);
+      height: 34px;
+      line-height: 33px;
+    }
   }
 }
 
+@include media-breakpoint-down(md) {
+  .brand-list {
+    display: block;
+  }
+
+  .brand-list-img {
+    width: 100%;
+    max-width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .brand-list-text {
+    width: 100%;
+    padding: 8% 0;
+
+    .brand-contenter {
+      font-size: pxToEm(16);
+    }
+
+    h2 {
+      font-size: pxToEm(25);
+      margin-bottom: 40px;
+
+      &:after {
+        width: 38px;
+        margin-top: 24px;
+      }
+    }
+
+    h3 {
+      font-size: pxToEm(20);
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .brand-case {
+    padding: 26px 0 30px 0;
+  }
+}

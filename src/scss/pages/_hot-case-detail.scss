@@ -25,3 +25,9 @@
     } 
   }
 }
+
+@include media-breakpoint-down(md) {
+  .hot-case-photo .hot-img-box{
+    display: block;
+  }
+}

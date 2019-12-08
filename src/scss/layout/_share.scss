@@ -92,10 +92,11 @@ main[role=main]{
 .path{
   background-color: #f1f1f1;
   font-size: pxToEm(20);
-  line-height: 2.9;
+  line-height: 1.5;
   letter-spacing: 4px;
   color: #8f8f8f;
   margin-bottom: 2.2%;
+  padding: 1.462% 0;
   a{
     color: #8f8f8f;
     text-decoration: none;
@@ -201,12 +202,44 @@ main[role=main]{
       margin: inherit;
   }
 }
+.mo-use{
+  display: none;
+}
+@include media-breakpoint-down(md) {
+  .main-content{
+    display: block;
+  }
+  .right-content{
+    width: 100% !important;
+  }
+  .pc-use{
+    display: none;
+  }
+  .mo-use{
+    display: block;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .path {
-    font-size: pxToEm(15);
+    font-size: pxToEm(14);
     margin-bottom: 4.5%;
     a::after{
       margin: 0;
     }
+  }
+  .title-box h2{
+    font-size: pxToEm(22);
+  }
+  .title-box h3{
+    font-size: pxToEm(18);
+  }
+  .title-box::after{
+    width: 221px;
+    height: 13px;
+  }
+  .media-title{
+    padding-bottom: 3%;
+    margin-bottom: 5%;
   }
 }

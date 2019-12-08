@@ -72,9 +72,12 @@ $lr_btn:14px;
     }
 }
 @include media-breakpoint-down(xs) {
+    .page dt a, .page dd a{
+        font-size: pxToEm(15);
+    }
     .page{
         dd {
-            width: 11%;
+            width: 8%;
         }
         dt.ltbn a{
             &:before{

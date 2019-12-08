@@ -17,7 +17,7 @@ $('.in-history-case ul').slick({
       breakpoint: 480,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 2
       }
     }
     // You can unslick at a given breakpoint now by adding:

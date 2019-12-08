@@ -14,3 +14,27 @@
 // @prepros-prepend ../section/index/about.js
 
 
+    /* ==========================================================================
+                  * header menu開啟
+      ==========================================================================*/
+
+      $('.menu-wrapper').on('click', function() {
+        if (!$('.hamburger-menu').hasClass('animate')) {
+            $('.hamburger-menu').addClass('animate');
+            $('.nav-box').stop().slideDown()
+            $('body,html').css({ 'overflow': 'hidden' });
+
+        } else {
+            $('.hamburger-menu').removeClass('animate');
+            $('.nav-box').stop().slideUp().removeClass('open');
+            $('body,html').removeAttr("style");
+        }
+    });
+
+    $('.closeBtn').on('click', function() {
+        $('.hamburger-menu').removeClass('animate');
+        $('.nav_item').stop().slideUp();
+        $('body,html').removeAttr("style");
+    });
+
+    
