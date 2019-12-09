@@ -126,6 +126,12 @@
       border-style: solid;
       border-width: 0 9.5px 16px 9.5px;
       border-color: transparent transparent #3b3838 transparent;
+      transition: .5s;
+    }
+    &.active{
+      &::after{
+        transform: rotate(-180deg);
+      }
     }
   }
 }

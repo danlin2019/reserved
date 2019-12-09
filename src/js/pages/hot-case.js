@@ -3,12 +3,13 @@
       ==========================================================================*/
 
       $('.item_title').on('click', function() {
-        if (!$('.item_nav').hasClass('active')) {
-          $('.item_nav').addClass('active')
+        if (!$('.item_title').hasClass('active')) {
+          $('.item_title').addClass('active')
             $('.item_nav').stop().slideDown()
 
         } else {
-            $('.item_nav').stop().slideUp().removeClass('active');
+            $('.item_title').removeClass('active');
+            $('.item_nav').stop().slideUp();
         }
     });
 

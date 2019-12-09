@@ -17,8 +17,10 @@ html(lang="zh-tw")
         //- 左邊選單
         .main-content
           .left-nav
-            .nav-title
+            .nav-title.mo-use
               | 歷年建案
+            // 這塊只有行動裝置才會出現 選擇 .item_nav li 裡面的文字會印到 .item_title 這個容器裡面  
+            .item_title 所有年度
             .item_nav
               ul
                 li.active
@@ -33,7 +35,7 @@ html(lang="zh-tw")
                   a(href="#") 2016 
           //- 右邊區塊
           .right-content
-            .title-box
+            .title-box.pc-use
               h2 歷年建案
               h3 HISTORY CASE
             .case-list
