@@ -14,6 +14,8 @@
   position: relative;
   width: 100%;
   display: flex;
+  justify-content: space-between;
+
   background: $white;
 
   &:nth-child(1) {
@@ -48,13 +50,13 @@
 }
 
 .brand-list-text {
-  width: 47%;
+  width: 50%;
   max-width: 723px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin: auto;
   a {
     text-decoration: none;
     color: #3b3838;
@@ -103,6 +105,11 @@
     font-size: 1.35vw;
     margin-bottom: 15.1%;
     line-height: 1.6;
+//     text-align: justify;
+// 　text-justify: inter-ideograph;
+// 　-ms-text-justify: inter-ideograph;
+// 　-moz-text-align-last:justify;
+// 　-webkit-text-align-last:justify; 
 
     @include screen(1366px) {
       margin-bottom: 5.1%;

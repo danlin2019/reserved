@@ -46,7 +46,9 @@
   .media-img{
     transition: .4s;
     width: 50%;
-    max-width: 644px;
+    max-width: 643px;
+    height: 0;
+    padding-bottom: 29.258%;
   }
   .media-list-content{
     transition: .4s;
@@ -55,7 +57,7 @@
     margin: 56px auto 31px auto;
     h2{
       font-size: pxToEm(20);
-      margin-bottom: 23px;
+      margin-bottom: 20px;
       width: 100%;
     }
     .media-title{
@@ -86,7 +88,7 @@
 .media-list-text{
   font-size: pxToEm(15);
   @include clamp(1.5,4);
-  margin-bottom: 14.8%;
+  margin-bottom: 13%;
 }
 
 .media-list-view{
@@ -137,7 +139,12 @@
   .media-list-text{
     margin-bottom: .8%;
   }
+  .media-list .media-img{
+    padding-bottom: 58.258%;
+  }
 }
+
+
 
 @include media-breakpoint-down(xs) {
   .media-list li a .hr-line {

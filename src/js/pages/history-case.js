@@ -1,1 +1,1 @@
-$('.case-list-img').imgLiquid();
+$('.case-list-img,.media-img').imgLiquid();

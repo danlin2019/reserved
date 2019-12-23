@@ -8,7 +8,7 @@ header{
     height: 118px;
     display: flex;
     align-items: center;
-    z-index: 10;
+    z-index: 999;
 }
 
 .header-box{
@@ -34,9 +34,15 @@ header{
         }
     }
 }
+@include media-breakpoint-down(sm) {
+    header{
+        background: #fff;
+    }
+}
 @include media-breakpoint-down(xs) {
     .header-box .logo {
         width: 59.027%;
         padding-bottom: 11.58%;
     }
+
 }

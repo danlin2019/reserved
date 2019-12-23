@@ -221,6 +221,9 @@ main[role=main]{
 }
 
 @include media-breakpoint-down(sm) {
+  main[role=main]{
+    margin-top: 70px;
+  }
   .path {
     font-size: pxToEm(14);
     margin-bottom: 4.5%;
